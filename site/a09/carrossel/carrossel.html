@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testando Carrossel</title>
+
+        <style>
+            .myslides{display: none;}
+            .banner{width: 90%;}
+        </style>
+
+    </head>
+    <body>
+        
+        <!-- Código HTML do carrossel automático de imagens -->
+        <div class="mySlides">
+            <img class="banner" src="imagens/lago.webp">
+        </div>
+        <div class="mySlides">
+            <img class="banner" src="imagens/ponte.jpg">
+        </div>
+        <div class="mySlides">
+            <img class="banner" src="imagens/mato">
+        </div>
+        <div class="mySlides">
+            <img class="banner" src="imagens/sol.jpg">
+        </div>
+
+        <script>
+            // Código JavaScript do carrossel automático de imagens
+            
+            var interval = 2000;
+            //medida em milissegundos (ex: 2000 milissegundos = 2 segundos)
+            
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > slides.length) {myIndex = 1}    
+                slides[myIndex-1].style.display = "block";  
+                setTimeout(carousel, interval);    
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .retangulo-1x2{
+            width: 100px;
+            height: 200px;
+        }
+        .retangulo-3x067{
+            width: 300px;
+            height: 67px;
+        }
+        .retangulo-3x04{
+            width: 300px;
+            height: 40px;
+        }
+
+        .circulo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .losango{
+            width: 100px;
+            height: 100px;
+            transform: rotate(-45deg);
+        }
+
+        .triangulo1{
+            width: 0;
+            height: 0;
+            border-bottom: 80px solid yellow;
+            border-left: 130px solid transparent;
+            border-right: 130px solid transparent;
+        }
+
+        .triangulo2{
+            width: 0;
+            height: 0;
+            border-top: 80px solid yellow;
+            border-left: 130px solid transparent;
+            border-right: 130px solid transparent;            
+        }
+
+        .triangulo3{
+            width: 0;
+            height: 0;
+            border-top: 130px solid transparent;
+            border-bottom: 130px solid transparent;
+            border-left: 200px solid gray;            
+            
+            /* overflow: hidden;
+            top: -15%;
+
+            position: relative; */
+        }
+
+        .triangulo4{
+            width: 0;
+            height: 0;
+            border-top: 130px solid transparent;
+            border-bottom: 130px solid transparent;
+            border-left: 200px solid white;
+            
+            
+            position: relative; 
+            top: -30px;
+        }
+
+        /* ESPAÇAMENTO */
+        .sem-borda{
+            border: none;
+        }
+        .sem-preenchimento{
+            margin: 0px;
+        }
+        .sem-margem{
+            padding: 0px;
+        }
+        .borda-cima-baixo{
+            border-top: 13px;
+            border-bottom: 13px;
+            border-left: 0;
+            border-right: 0;
+        }
+
+
+
+        .borda-branca{ border-style: solid; border-color: white;}
+
+        /* ALINHAMENTOS */
+        .centro-circulo{
+            margin: 50px 100px 50px;
+        }
+        .centro-triangulo1{
+            margin: 20px 20px 20px;
+            margin-bottom: 0;
+        }
+        .centro-triangulo2{
+            margin-left: 20px;
+        }
+
+        .em-linha-bloco{display: inline-block;}
+        .flex{display: inline-flex;}
+        .grid{display: grid;}
+        .absolute{position: absolute;}
+        .relative{position: relative;}
+
+
+        /* CONTAINERS */
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .l1 {transform: translate(15px);}
+        .l2 {transform: translate(-210px);}
+        .l3 {transform: translate(-490px);}
+        .l4 {transform: translate(-710px);}
+
+
+        .l11 {transform: translate(0px 50px);}
+        .l12 {transform: translate(-210px);}
+        .l13 {transform: translate(-490px);}
+        .l14 {transform: translate(-710px);}
+
+        .layer1{left: 0;}
+        .layer2{left: -10px;}
+        .layer3{left: -20px;}
+
+    </style>
+
+</head>
+<body>
+   <h1>Belgica</h1>
+    <img
+    src="https://flagcdn.com/w160/be.png"
+    srcset="https://flagcdn.com/w320/be.png 2x"
+    width="160"
+    alt="Bélgica">
+
+
+</body>
+</html>
+
+<div class="bandeira">
+
+</div>
+
+<div class="circulo">
+</div>
